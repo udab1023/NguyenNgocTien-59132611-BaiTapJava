@@ -13,6 +13,10 @@ public class NhanVien {
     public int Tuoi,TongSoGioLam;
     public double TienLuong,Thuong;
     
+    public NhanVien(){
+        
+    }
+    
     public NhanVien(String Ten, int Tuoi, String DiaChi, int TongSoGioLam, double TienLuong){
         this.Ten = Ten;
         this.Tuoi = Tuoi;
@@ -54,14 +58,18 @@ public class NhanVien {
     public void setTienLuong(double TienLuong){
         this.TienLuong = TienLuong;
     }
+
+    public String getThongTin(){
+        return Ten+"\n"+Tuoi+"\n"+DiaChi+"\n"+TongSoGioLam+"\n"+TienLuong+"\n"+tinhThuong()+"\n";
+    }
     
     public double tinhThuong(){
-        if (TongSoGioLam >= 200){
-            Thuong=this.TienLuong * 20/100;}
-        else if (TongSoGioLam <200 && TongSoGioLam >=100){
-            Thuong=this.TienLuong * 10/100;}
-            else{Thuong=0;}
+        if (TongSoGioLam >= 200)
+            return Thuong=this.TienLuong * 20/100;
+        else if (TongSoGioLam <200 && TongSoGioLam >=100)
+            return Thuong=this.TienLuong * 10/100;
+        else Thuong=0;
         return 0;
     }
-        void display(){System.out.println(Ten+" "+Tuoi+" "+DiaChi+" "+TongSoGioLam+" "+TienLuong+" "+Thuong);}
+
 }
