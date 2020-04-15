@@ -68,8 +68,7 @@ public class NhanVien {
             return Thuong=this.TienLuong * 20/100;
         else if (TongSoGioLam <200 && TongSoGioLam >=100)
             return Thuong=this.TienLuong * 10/100;
-        else Thuong=0;
-        return 0;
+        else return Thuong=0;
     }
 
 }

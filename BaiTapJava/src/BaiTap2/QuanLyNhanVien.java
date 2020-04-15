@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 package BaiTap2;
+import BaiTap1.NhanVien;
 /**
  *
  * @author ngoct
  */
-public interface IQuanLy {
-    public void them();
-    public void inDS();
+public class QuanLyNhanVien implements IQuanLy {
+    
 }

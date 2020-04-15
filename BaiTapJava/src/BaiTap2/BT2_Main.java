@@ -9,6 +9,6 @@ package BaiTap2;
  *
  * @author ngoct
  */
-public class BT2_Main implements IQuanLy {
+public class BT2_Main {
     
 }
