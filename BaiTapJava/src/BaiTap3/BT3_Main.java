@@ -11,9 +11,9 @@ package BaiTap3;
  */
 public class BT3_Main {
     public static void main(String[] args){
-          SinhVienPoly s1 = new SinhVienPoly();
-          SinhVienIT s2 = new SinhVienIT();
-          SinhVienBiz s3 = new SinhVienBiz();
-          Xuat (s1);
+          SinhVienIT s2 = new SinhVienIT(5.0,6.0,7.0,"Ngoc","IT");
+          SinhVienBiz s3 = new SinhVienBiz(8.0,9.0,"Loan","Biz");
+          System.out.println(s2.xuat());
+          System.out.println(s3.xuat());
     }
 }
