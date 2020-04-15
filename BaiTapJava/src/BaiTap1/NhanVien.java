@@ -60,7 +60,7 @@ public class NhanVien {
     }
 
     public String getThongTin(){
-        return Ten+"\n"+Tuoi+"\n"+DiaChi+"\n"+TongSoGioLam+"\n"+TienLuong+"\n"+tinhThuong()+"\n";
+        return "TenNV: "+Ten+"\n"+"Tuoi: "+Tuoi+"\n"+"Dia Chi: "+DiaChi+"\n"+"Tong So Gio Lam: "+TongSoGioLam+"\n"+"Tien Luong: "+TienLuong+"\n"+"Thuong: "+tinhThuong()+"\n";
     }
     
     public double tinhThuong(){

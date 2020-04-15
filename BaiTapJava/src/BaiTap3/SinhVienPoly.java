@@ -16,20 +16,6 @@ public abstract class SinhVienPoly {
         this.hoTen = hoTen;
         this.nganh = nganh;
     }
-    
-    public String gethoTen(){
-        return hoTen;
-    }
-    public void sethoTen(String hoTen){
-        this.hoTen = hoTen;
-    }
-
-    public String getnghanh(){
-        return nganh;
-    }
-    public void setnghanh(String nghanh){
-        this.nganh = nghanh;
-    }
 
     public abstract double getDiem();
     
@@ -45,6 +31,6 @@ public abstract class SinhVienPoly {
         else return "xuat xac";
     }
     public String xuat(){
-        return hoTen+"\n"+nganh+"\n"+getDiem()+"\n"+getHocLuc()+"\n";
+        return "TenSV: "+hoTen+"\n"+"Nganh: "+nganh;
     }
 }

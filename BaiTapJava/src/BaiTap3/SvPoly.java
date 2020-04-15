@@ -9,17 +9,13 @@ package BaiTap3;
  *
  * @author ngoct
  */
-public class SinhVienBiz extends SinhVienPoly {
-    public double diemMarketing,diemSales;
-    
-    public SinhVienBiz(double diemMarketing, double diemSales, String hoTen, String nganh){
+public class SvPoly extends SinhVienPoly {
+    public SvPoly (String hoTen, String nganh){
         super (hoTen,nganh);
-        this.diemMarketing = diemMarketing;
-        this.diemSales = diemSales;
     }
 
     @Override
     public double getDiem(){
-        return (2* diemMarketing + diemSales)/3;
+        return 0;
     }
 }
