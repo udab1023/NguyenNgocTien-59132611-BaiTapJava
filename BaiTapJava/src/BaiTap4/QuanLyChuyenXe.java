@@ -5,10 +5,35 @@
  */
 package BaiTap4;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ngoct
  */
 public class QuanLyChuyenXe {
+    public double TongDoanhThu,DoanhThuXeNgoaiThanh,DoanhThuXeNoiThanh;
     
+    public QuanLyChuyenXe(double TongDoanhThu, double DoanhThuXeNgoaiThanh, double DoanhThuXeNoiThanh){
+        this.TongDoanhThu = TongDoanhThu;
+        this.DoanhThuXeNgoaiThanh = DoanhThuXeNgoaiThanh;
+        this.DoanhThuXeNoiThanh = DoanhThuXeNoiThanh;
+    }
+    ArrayList l = new ArrayList();
+    
+    public void themCX(ChuyenXe cx){
+        l.add(cx);
+    }
+    public void xuatDS(){
+        l.size();
+        }
+    public void TTtungChuyenXe (){
+        System.out.println("Cac chuyen xe có trong danh sach la: ");
+        for (int i = 0; i < l.size(); i++) {
+            System.out.println(l.get(i));
+        }
+    public double tinhTongDoanhThu(){
+        XeNgoaiThanh.DoanhThu;
+    }
+    }
 }
