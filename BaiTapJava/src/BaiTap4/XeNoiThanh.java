@@ -19,4 +19,22 @@ public class XeNoiThanh extends ChuyenXe{
         this.soKmDiDuoc = soKmDiDuoc;
         this.DoanhThu = DoanhThu;
     }
+    public int getsoTuyen(){
+        return soTuyen;
+    }
+    public void setsoTuyen(int soTuyen){
+        this.soTuyen = soTuyen;
+    }
+    public int getsoKmDiDuoc(){
+        return soKmDiDuoc;
+    }
+    public void setsoKmDiDuoc(int soKmDiDuoc){
+        this.soKmDiDuoc = soKmDiDuoc;
+    }
+    public double getDoanhThu(){
+        return DoanhThu;
+    }
+    public void setDoanhThu(double DoanhThu){
+        this.DoanhThu = DoanhThu;
+    }
 }

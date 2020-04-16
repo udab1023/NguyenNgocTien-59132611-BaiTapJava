@@ -21,7 +21,7 @@ public class QuanLyNhanVien implements IQuanLy {
     public void inDS(){
         System.out.println("Cac nhan vien có trong danh sach la: ");
         for (int i = 0; i < l.size(); i++) {
-            System.out.println(l.get(i));
+            System.out.println(l.get(i).getThongTin());
         }
         
     }

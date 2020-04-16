@@ -20,4 +20,22 @@ public class XeNgoaiThanh extends ChuyenXe{
         this.soNgayDiDuoc = soNgayDiDuoc;
         this.DoanhThu = DoanhThu;
     }
+    public String getnoiDen(){
+        return noiDen;
+    }
+    public void setsoTuyen(String noiDen){
+        this.noiDen = noiDen;
+    }
+    public int getsoNgayDiDuoc(){
+        return soNgayDiDuoc;
+    }
+    public void setsoNgayDiDuoc(int soNgayDiDuoc){
+        this.soNgayDiDuoc = soNgayDiDuoc;
+    }
+    public double getDoanhThu(){
+        return DoanhThu;
+    }
+    public void setDoanhThu(double DoanhThu){
+        this.DoanhThu = DoanhThu;
+    }
 }

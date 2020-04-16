@@ -12,13 +12,7 @@ import java.util.ArrayList;
  * @author ngoct
  */
 public class QuanLyChuyenXe {
-    public double TongDoanhThu,DoanhThuXeNgoaiThanh,DoanhThuXeNoiThanh;
-    
-    public QuanLyChuyenXe(double TongDoanhThu, double DoanhThuXeNgoaiThanh, double DoanhThuXeNoiThanh){
-        this.TongDoanhThu = TongDoanhThu;
-        this.DoanhThuXeNgoaiThanh = DoanhThuXeNgoaiThanh;
-        this.DoanhThuXeNoiThanh = DoanhThuXeNoiThanh;
-    }
+
     ArrayList l = new ArrayList();
     
     public void themCX(ChuyenXe cx){
@@ -32,8 +26,8 @@ public class QuanLyChuyenXe {
         for (int i = 0; i < l.size(); i++) {
             System.out.println(l.get(i));
         }
-    public double tinhTongDoanhThu(){
-        XeNgoaiThanh.DoanhThu;
     }
+    public double tinhTongDoanhThu(double XeNoiThanh.DoanhThu, double XeNgoaiThanh.DoanhThu){
+        XeNoiThanh.DoanhThu + XeNgoaiThanh.DoanhThu;
     }
 }
