@@ -12,30 +12,25 @@ package BaiTap4;
 public class XeNgoaiThanh extends ChuyenXe{
     String noiDen;
     int soNgayDiDuoc;
-    double DoanhThu;
     
-    public XeNgoaiThanh(String msChuyen, String hoTenTaiXe, String soXe, String noiDen, int soNgayDiDuoc, double DoanhThu){
-        super(msChuyen,hoTenTaiXe,soXe);
+    public XeNgoaiThanh(String msChuyen, String hoTenTaiXe, String soXe, double DoanhThu, String noiDen, int soNgayDiDuoc){
+        super(msChuyen,hoTenTaiXe,soXe,DoanhThu);
         this.noiDen = noiDen;
         this.soNgayDiDuoc = soNgayDiDuoc;
-        this.DoanhThu = DoanhThu;
     }
+    
     public String getnoiDen(){
         return noiDen;
     }
     public void setsoTuyen(String noiDen){
         this.noiDen = noiDen;
     }
+    
     public int getsoNgayDiDuoc(){
         return soNgayDiDuoc;
     }
     public void setsoNgayDiDuoc(int soNgayDiDuoc){
         this.soNgayDiDuoc = soNgayDiDuoc;
     }
-    public double getDoanhThu(){
-        return DoanhThu;
-    }
-    public void setDoanhThu(double DoanhThu){
-        this.DoanhThu = DoanhThu;
-    }
+
 }

@@ -11,13 +11,11 @@ package BaiTap4;
  */
 public class XeNoiThanh extends ChuyenXe{
     public int soTuyen, soKmDiDuoc;
-    public double DoanhThu;
     
-    public XeNoiThanh(String msChuyen, String hoTenTaiXe, String soXe, int soTuyen, int soKmDiDuoc, double DoanhThu){
-        super(msChuyen,hoTenTaiXe,soXe);
+    public XeNoiThanh(String msChuyen, String hoTenTaiXe, String soXe, double DoanhThu, int soTuyen, int soKmDiDuoc){
+        super(msChuyen,hoTenTaiXe,soXe,DoanhThu);
         this.soTuyen = soTuyen;
         this.soKmDiDuoc = soKmDiDuoc;
-        this.DoanhThu = DoanhThu;
     }
     public int getsoTuyen(){
         return soTuyen;
@@ -25,16 +23,11 @@ public class XeNoiThanh extends ChuyenXe{
     public void setsoTuyen(int soTuyen){
         this.soTuyen = soTuyen;
     }
+    
     public int getsoKmDiDuoc(){
         return soKmDiDuoc;
     }
     public void setsoKmDiDuoc(int soKmDiDuoc){
         this.soKmDiDuoc = soKmDiDuoc;
-    }
-    public double getDoanhThu(){
-        return DoanhThu;
-    }
-    public void setDoanhThu(double DoanhThu){
-        this.DoanhThu = DoanhThu;
     }
 }

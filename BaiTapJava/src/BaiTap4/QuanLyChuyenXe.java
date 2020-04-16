@@ -12,8 +12,11 @@ import java.util.ArrayList;
  * @author ngoct
  */
 public class QuanLyChuyenXe {
+    public double tongDoanhThuNoiThanh = 0;
+    public double tongDoanhThuNgoaiThanh = 0;
+    public double tongDoanhThu = 0;
 
-    ArrayList l = new ArrayList();
+    ArrayList<ChuyenXe> l = new ArrayList<>();
     
     public void themCX(ChuyenXe cx){
         l.add(cx);
@@ -24,10 +27,25 @@ public class QuanLyChuyenXe {
     public void TTtungChuyenXe (){
         System.out.println("Cac chuyen xe có trong danh sach la: ");
         for (int i = 0; i < l.size(); i++) {
-            System.out.println(l.get(i));
+            System.out.println(l.get(i).getThongTin());
         }
     }
-    public double tinhTongDoanhThu(double XeNoiThanh.DoanhThu, double XeNgoaiThanh.DoanhThu){
-        XeNoiThanh.DoanhThu + XeNgoaiThanh.DoanhThu;
+    public double tinhDoanhThuNoiThanh(){
+        for (int i = 0; i < l.size(); i++){
+            if(l.get(i) instanceof XeNoiThanh)
+                tongDoanhThuNoiThanh += l.get(i).getDoanhThu(); 
+        }
+        return tongDoanhThuNoiThanh;
+    }
+    public double tinhDoanhThuNgoaiThanh(){
+        for (int i = 0; i < l.size(); i++){
+            if(l.get(i) instanceof XeNgoaiThanh)
+                tongDoanhThuNgoaiThanh += l.get(i).getDoanhThu();
+        }
+        return tongDoanhThuNgoaiThanh;
+    }
+    public double tongDoanhThu(){
+        tongDoanhThu = tongDoanhThuNoiThanh + tongDoanhThuNgoaiThanh;
+        return tongDoanhThu;
     }
 }
